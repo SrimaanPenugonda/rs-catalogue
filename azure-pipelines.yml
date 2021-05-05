@@ -30,7 +30,7 @@ steps:
 
 - task: UniversalPackages@0
   condition: contains(variables['Build.SourceBranch'],'tags') #this condition helps to publish artifacts only when
-  inputs: #publish catalogue artifactory                     #tags , Build.SourceBranch
+  inputs: #publish catalogue artifactory                     #tags ,Build.SourceBranch
      command: 'publish'
      publishDirectory: '$(Build.SourcesDirectory)/publish'  # here download only publish directory
      feedsToUsePublish: 'internal'
