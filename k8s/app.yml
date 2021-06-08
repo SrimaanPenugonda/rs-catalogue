@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: catalogue
-          image: rkalluru/d53-rs-catalogue:VERSION
+          image: srimaanaws2021/rs-catalogue:VERSION
           ports:
             - containerPort: 8080
           env:
